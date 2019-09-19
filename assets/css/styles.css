@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'GoldenSans-Black';
+    src: url("../fonts/317772_0_0.eot");
+    src: url("../fonts/317772_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_0_0.woff2") format("woff2"), url("../fonts/317772_0_0.woff") format("woff"), url("../fonts/317772_0_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'GoldenSans-Bold';
+    src: url("../fonts/317772_1_0.eot");
+    src: url("../fonts/317772_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_1_0.woff2") format("woff2"), url("../fonts/317772_1_0.woff") format("woff"), url("../fonts/317772_1_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'GoldenSans-Light';
+    src: url("../fonts/317772_2_0.eot");
+    src: url("../fonts/317772_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_2_0.woff2") format("woff2"), url("../fonts/317772_2_0.woff") format("woff"), url("../fonts/317772_2_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'GoldenSans-Medium';
+    src: url("../fonts/317772_3_0.eot");
+    src: url("../fonts/317772_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_3_0.woff2") format("woff2"), url("../fonts/317772_3_0.woff") format("woff"), url("../fonts/317772_3_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'GoldenSans-Thin';
+    src: url("../fonts/317772_4_0.eot");
+    src: url("../fonts/317772_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_4_0.woff2") format("woff2"), url("../fonts/317772_4_0.woff") format("woff"), url("../fonts/317772_4_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'GoldenSans-Regular';
+    src: url("../fonts/317772_5_0.eot");
+    src: url("../fonts/317772_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_5_0.woff2") format("woff2"), url("../fonts/317772_5_0.woff") format("woff"), url("../fonts/317772_5_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'GoldenSans-UltraLight';
+    src: url("../fonts/317772_6_0.eot");
+    src: url("../fonts/317772_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/317772_6_0.woff2") format("woff2"), url("../fonts/317772_6_0.woff") format("woff"), url("../fonts/317772_6_0.ttf") format("truetype")
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #590000;
+
+}
+
+canvas {
+    display: block;
+    margin: auto;
+
+}
+
+#game{
+    m﻿argin:0;
+    padding:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}﻿﻿﻿
+
+﻿﻿
