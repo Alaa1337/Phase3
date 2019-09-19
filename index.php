@@ -17,6 +17,7 @@
     <meta charset="UTF-8">
     <title>Game</title>
     <script src="vendor/phaser-ce/build/phaser.js"></script>
+    <script src="plugins/HealthBar.standalone.js"></script>
     <script type="text/javascript">
 
 
@@ -24,10 +25,7 @@
 </head>
 <body>
 <main id="game"></main>
-<div> <?php 
-print_r($_SERVER['REMOTE_ADDR']);
 
-?></div>
 <script src="index.js"></script>
 
 

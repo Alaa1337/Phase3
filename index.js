@@ -51,6 +51,7 @@ Main.prototype = {
 
     preload: function () {
         game.load.image('player', 'assets/images/logo_rot_300.png')
+        game.load.spritesheet('boost', 'assets/images/boost2.png',175,141)
         game.load.spritesheet('spark', 'assets/images/spark.png',64,64,3,0,0,3)
         game.load.image('wall', 'assets/images/wall1.png')
         game.load.image('space', 'assets/images/space_new5.png')
@@ -66,6 +67,7 @@ Main.prototype = {
         game.load.script('Level', 'states/Level.js');
         game.load.script('Score', 'states/End_screen.js');
         game.load.script('Gamepad', 'plugins/phaser-plugin-virtual-gamepad.js');
+        game.load.script('Bar', 'plugins/HealthBar.js');
 
      //   var gamepad = gamepad.plugins.add(Phaser.Plugin.VirtualJoystick)
 

@@ -55,6 +55,7 @@ Level.prototype = {
 
         //joystick
         this.gamepad = game.plugins.add(Phaser.Plugin.VirtualGamepad)
+
         this.joystick = this.gamepad.addJoystick(-280 / devicePixelRatio, game.world.height - 100, 1.4, 'joystick');
         this.button = this.gamepad.addButton(-110, -110, 1.0, 'joystick');
         // console.log(this.button)
@@ -77,7 +78,7 @@ Level.prototype = {
         this.checkMoveleft = false;
 
 
-        this.shootButton = game.add.button((game.world.width / devicePixelRatio) + game.world.centerX / 2, game.world.height - 175, "shoot_button", this.shooting, this)
+        this.shootButton = game.add.button((game.world.width / devicePixelRatio) + game.world.centerX / 2, game.world.height - 80, "shoot_button", this.shooting, this)
         this.shootButton.scale.setTo(0.6)
         this.shootButton.alpha = 1;
 
@@ -113,18 +114,52 @@ Level.prototype = {
         //  this.rightButton.onInputDown.add(this.moveOn(this.checkMoveright), this)
         //   this.rightButton.onInputUp.add(this.moveOff(this.checkMoveright), this)
 
-        this.spark = game.add.sprite(this.player.x, this.player.y, 'spark')
-        this.spark.animations.add('sparking')
-        this.spark.animations.play('sparking', 50, true)
+
+      //
+
+        this.tilesprite.scale.set(scaleRatio / (scaleRatio/2))
+
+        this.rescale()
+
+        this.spark = game.add.sprite(this.player.x,this.player.y +150, 'boost');
+
+        this.spark.animations.add('boosting');
+
+        this.spark.animations.play('boosting', 50, true);
+this.spark.alpha = 0.75;
+        this.spark.angle = 90
+
         this.spark.kill()
 
-        this.tilesprite.scale.set(2.5)
-        this.rescale()
+
+
+
 
 
         this.spark.anchor.set(0.5, 0.5)
-        this.spark.scale.set(1.5)
+        this.spark.scale.set(2.0)
         this.player.anchor.set(0.5, 0.5)
+
+
+        this.barConfig = {
+            width: 250,
+            height: 40,
+            x: game.world.centerX,
+            y: game.world.height,
+            bg: {
+                color: '#cbcbcb'
+            },
+            bar: {
+                color: '#ad0808'
+            },
+            animationDuration: 5000,
+            flipped: false,
+        };
+        this.HealthBar = new HealthBar(this.game,this.barConfig)
+
+
+
+
 
         /*
         game.input.onTap.add(this.onTap, this);
@@ -140,17 +175,17 @@ Level.prototype = {
         if (devicePixelRatio > 3) {
 
 
-            this.joystick.scale.setTo(1)
-            this.shootButton.scale.setTo(0.4)
-            this.boostButton.scale.setTo(0.4)
+            //this.joystick.scale.setTo(1)
+            //this.shootButton.scale.setTo(0.4)
+            //this.boostButton.scale.setTo(0.4)
             //this.jumpButton.scale.setTo(0.6)
           //  this.leftButton.scale.setTo(0.5)
            // this.rightButton.scale.setTo(0.5)
 
             //this.jumpButton.x = (game.world.width / devicePixelRatio) + game.world.centerX / 1.5 + 40;
-            this.shootButton.x = (game.world.width / devicePixelRatio) + game.world.centerX / 2 + 25;
-            this.boostButton.x = (game.world.width / devicePixelRatio) + game.world.centerX / 2 + 25;
-            this.rightButton.x = this.rightButton.x - 15
+            //this.shootButton.x = (game.world.width / devicePixelRatio) + game.world.centerX / 2 + 25;
+            //this.boostButton.x = (game.world.width / devicePixelRatio) + game.world.centerX / 2 + 25;
+            //this.rightButton.x = this.rightButton.x - 15
 
         }
 
@@ -211,6 +246,7 @@ Level.prototype = {
         game.add.tween(this.shootButton).to({alpha: 1}, 200, Phaser.Easing.Linear.None, true);
     },
     boostingCooldown: function () {
+
         this.boostButton.inputEnabled = true;
 
         game.add.tween(this.boostButton).to({alpha: 1}, 200, Phaser.Easing.Linear.None, true);
@@ -351,7 +387,8 @@ Level.prototype = {
     },
 
     Boost: function () {
-
+this.spark.revive()
+        this.HealthBar.setPercent(0)
         this.boostButton.inputEnabled = false;
         this.walls.killAll()
         this.godMode = true;
@@ -360,6 +397,7 @@ Level.prototype = {
         this.tilesprite.autoScroll(0, 500);
         this.timerspeed = 1000
         this.timer.delay = 300;
+     //   this.barConfig.animationDuration = 5000;
         this.emitter.gravity = 500;
         this.boostTimer = game.time.events.add(5000, this.disableBoost, this)
         game.add.tween(this.boostButton).to({alpha: 0.5}, 200, Phaser.Easing.Linear.None, true);
@@ -367,6 +405,7 @@ Level.prototype = {
 
     },
     disableBoost: function () {
+this.spark.kill()
 
         this.tilesprite.autoScroll(0, 20);
         this.player.body.gravity.y = 400;
@@ -375,6 +414,8 @@ Level.prototype = {
         this.player.jump = -230;
         this.godMode = false
         this.walls.killAll()
+        this.HealthBar.setPercent(100)
+
         this.boostTimer2 = game.time.events.add(40000, this.boostingCooldown, this)
         this.player.body.acceleration.y = 0
     },
@@ -406,7 +447,7 @@ Level.prototype = {
     confirmDoubleClick: function (itemBeingClicked, func) {
         if (!this.secondClick) {
             this.secondClick = true;
-            this.time.events.add(300, function () {
+            this.time.events.add(500, function () {
                 this.secondClick = false;
 
             }, this);
@@ -428,9 +469,12 @@ Level.prototype = {
         if (this.cursors.up.justDown) {
             this.jump()
 
+            this.barConfig.y = 0
+
+
 
         }
-
+        this.barConfig.animationDuration = 40000;
 
         this.left()
         this.right()
@@ -444,20 +488,20 @@ Level.prototype = {
 
 
         if (this.godMode === true) {
-            this.spark.revive()
-            this.spark.animations.add('sparking')
-            this.spark.animations.play('sparking', 50, true)
 
-            this.spark.position.set(this.player.x, this.player.y)
+           // this.spark.animations.add('sparking')
+            //this.spark.animations.play('sparking', 20, true)
+
+          this.spark.position.set(this.player.x, this.player.centerY+50)
             this.player.angle -= 300
 
-            this.spark.angle += 300
 
-            console.log(this.spark.angle)
+
+            //console.log(this.spark.angle)
 
         }
         else {
-            this.spark.kill()
+           // this.spark.kill()
             this.player.angle = 0;
         }
 
@@ -526,7 +570,7 @@ Level.prototype = {
         this.player.body.setZeroVelocity = true;
 
 
-        //this.playerMovement();
+        this.playerMovement();
         this.xmovement();
         this.left();
         this.right();
@@ -557,23 +601,31 @@ Level.prototype = {
 
 
             console.log(this.swipeDiffX)
-            if (this.swipeDiffX < -100) {
+            if (this.swipeDiffX < -15 && this.swipeDiffY > - 30) {
                 this.checkMoveleft = true
             }
-            if (this.swipeDiffX > 100) {
+            if (this.swipeDiffX > 15 && this.swipeDiffY > - 30) {
                 this.checkMoveright = true
             }
-            if (this.swipeDiffY < -100) {
+            if (this.swipeDiffY < -35) {
                 this.jump()
+            }            if (this.swipeDiffY > 35 && this.shootButton.inputEnabled === true) {
+                this.shooting()
             }
         }
+
+        console.log(game.input.activePointer.previousTapTime)
+
         if (game.input.activePointer.isUp) {
             if (this.down === true) {
 
-                if (this.swipeDiffX === 0 && this.swipeDiffY === 0) {
 
 
-                    if (this.confirmDoubleClick(game.input.activePointer.isDown )) {
+
+
+
+
+                    if (this.confirmDoubleClick(game.input.activePointer.isDown)) {
                         if (this.godMode === false && this.boostButton.inputEnabled === true) {
                             this.Boost()
                         }
@@ -581,8 +633,11 @@ Level.prototype = {
                         this.shooting()
                     }
 
+                    if (this.swipeDiffX < 10 && this.swipeDiffX > -10 && this.swipeDiffY < 10 && this.swipeDiffY > -10) {
 
-                }
+
+                    }
+
 
 
                 this.swipeDiffXOriginal = this.swipeDiffX;
