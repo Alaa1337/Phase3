@@ -6,17 +6,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="528740d4-877c-40b6-ad6c-c97868e98b74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/jump.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/space_new2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/space_new3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/phaser-plugin-virtual-gamepad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/End_screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/states/End_screen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/Level.js" beforeDir="false" afterPath="$PROJECT_DIR$/states/Level.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/Camera.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/CameraConstants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-console/www/console-via-logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-console/www/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/Contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactAddress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactFieldType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactFindOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ContactOrganization.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/contacts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ios/Contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-contacts/www/ios/contacts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/www/Acceleration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-motion/www/accelerometer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/www/CompassError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/www/CompassHeading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device-orientation/www/compass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-device/www/device.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file-transfer/www/FileTransfer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file-transfer/www/FileTransferError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/DirectoryEntry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/DirectoryReader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/Entry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/File.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileEntry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileReader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileUploadOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileUploadResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/FileWriter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/Flags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/LocalFileSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/Metadata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/ProgressEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/fileSystemPaths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/fileSystems-roots.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/fileSystems.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/ios/FileSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/requestFileSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/Coordinates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/Position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/PositionError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/www/geolocation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/GlobalizationError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-globalization/www/globalization.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/CaptureError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/CaptureImageOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/CaptureVideoOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/MediaFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/MediaFileData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-media-capture/www/capture.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/Connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-network-information/www/network.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/www/splashscreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/www/statusbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/cordova-plugin-vibration/www/vibration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugins/phonegap-plugin-push/www/push.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +133,7 @@
           <entry key="js" value="22184" />
           <entry key="php" value="3" />
           <entry key="scss" value="84" />
-          <entry key="txt" value="18" />
+          <entry key="txt" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -87,7 +142,7 @@
           <entry key="HTML" value="130" />
           <entry key="JavaScript" value="22184" />
           <entry key="PHP" value="3" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="PLAIN_TEXT" value="34" />
           <entry key="SCSS" value="84" />
         </counts>
       </usages-collector>
@@ -98,8 +153,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/states/Level.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="-833">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
@@ -253,11 +308,6 @@
             <path>
               <item name="phase3" type="b2602c69:ProjectViewProjectNode" />
               <item name="phase3" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="phase3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="phase3" type="462c0819:PsiDirectoryNode" />
               <item name="states" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -330,7 +380,7 @@
       <workItem from="1568874832390" duration="19433000" />
       <workItem from="1568898855100" duration="7796000" />
       <workItem from="1568907011698" duration="155000" />
-      <workItem from="1568963941313" duration="19229000" />
+      <workItem from="1568963941313" duration="20488000" />
     </task>
     <task id="LOCAL-00001" summary="movement improved">
       <created>1568905811959</created>
@@ -339,19 +389,26 @@
       <option name="project" value="LOCAL" />
       <updated>1568905811959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixes">
+      <created>1568986327397</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568986327397</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237692000" />
+    <option name="totallyTimeSpent" value="238951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32036248" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32036248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -360,7 +417,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -379,7 +436,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="movement improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="movement improved" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/states/Level.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="-833">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
