@@ -54,20 +54,17 @@ Main.prototype = {
         game.load.spritesheet('boost', 'assets/images/boost2.png',175,141)
         game.load.spritesheet('spark', 'assets/images/spark.png',64,64,3,0,0,3)
         game.load.image('wall', 'assets/images/wall1.png')
+        game.load.image('invWall', 'assets/images/inv_wall.png')
         game.load.image('space', 'assets/images/space_new5.png')
         game.load.image('particles', 'assets/images/particles.png')
         game.load.image('bullet', 'assets/images/bullet.png')
         game.load.image('restart', 'assets/images/restart.png')
-        game.load.image('jump', 'assets/images/jump.png')
-        game.load.image('left', 'assets/images/left.png')
-        game.load.image('right', 'assets/images/right.png')
         game.load.image('shoot_button', 'assets/images/shoot_button.png')
         game.load.image('boost_button', 'assets/images/boost_button.png')
         game.load.spritesheet('joystick', 'assets/images/gamepad_spritesheet.png',100,100)
         game.load.script('Level', 'states/Level.js');
         game.load.script('Score', 'states/End_screen.js');
-        game.load.script('Gamepad', 'plugins/phaser-plugin-virtual-gamepad.js');
-        game.load.script('Bar', 'plugins/HealthBar.js');
+
 
      //   var gamepad = gamepad.plugins.add(Phaser.Plugin.VirtualJoystick)
 

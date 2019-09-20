@@ -11,6 +11,16 @@ Endscreen.prototype = {
 
     create: function () {
 
+        this.tilesprite = game.add.tileSprite(0, 0, game.width, game.height, 'space');
+        this.backgroundspeed = -40
+        this.tilesprite.autoScroll(0, this.backgroundspeed);
+
+this.tween =  game.add.tween(this.backgroundspeed).loop(true).to(500,2000,'Linear',true)
+
+
+        this.tilesprite.width = game.width
+        this.tilesprite.height = game.height
+
 
 /*
         if (Score >= Highscore){
@@ -31,8 +41,8 @@ console.log(highScore)
 
         console.log("TEST"+highScore)
 
-this.score = game.add.text(game.world.centerX,game.world.centerY,Score,{ fontSize: '64px', fill: '#f00' })
-this.Highscore = game.add.text(0,game.world.centerY-100,"Highscore "+localStorage.getItem("highscore"),{ fontSize: '36px', fill: '#f00' })
+this.score = game.add.text(game.world.centerX,game.world.centerY,Score,{ fontSize: '64px', fill: '#fff' })
+this.Highscore = game.add.text(0,game.world.centerY-100,"Highscore "+localStorage.getItem("highscore"),{ fontSize: '36px', fill: '#fff' })
 this.restartButton = game.add.button(game.world.centerX,game.world.centerY+100,"restart",this.restartGame)
 
 this.Highscore.centerX = this.game.world.centerX
@@ -51,6 +61,11 @@ this.restartButton.centerX = this.game.world.centerX
 
 
     update: function () {
+
+       // this.tilesprite.autoScroll(0, this.backgroundspeed);
+
+
+
 
 
     },
